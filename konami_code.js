@@ -9,6 +9,7 @@ function init()
         if (event.which===code[tracker])
           { tracker++
             console.log ("Success")
+            
           }
         else
           { console.log ("You've messed up")
