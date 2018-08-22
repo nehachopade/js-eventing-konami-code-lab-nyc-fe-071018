@@ -4,15 +4,13 @@ function init()
 {
     let tracker=0;
     const body= document.selector('body')
-    body.addEventListener('keydown', (event) => {
-    if (event.which===code[tracker])
-    {tracker++}
-    else 
-      {console.log ('You've messed up')
-      tracker=0;}
-  
-    }
-
-  )
+    body.addEventListener('keydown', (event) => 
+    {
+        if (event.which===code[tracker])
+          {tracker++}
+        else
+          {console.log ("You've messed up")
+          tracker=0;}
+    })
 }
 init()
