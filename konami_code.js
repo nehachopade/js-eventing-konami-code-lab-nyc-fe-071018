@@ -5,10 +5,7 @@ function onKeyDownHandler()
     let tracker=0;
     const body= document.querySelector('body')
     const paragraph=document.createElement('p')
-    
-    body.addEventListener('keydown', onKeyDownHandler => 
-    {
-        if(tracker===code.length-1){
+    if(tracker===code.length-1){
           
           event.preventDefault()
           body.append('Great Job', paragraph)
@@ -23,11 +20,12 @@ function onKeyDownHandler()
         else
           { console.log ("You've messed up")
             tracker=0;}
-    })
+    
+   
 }
 function init ()
 {
-  
+   body.addEventListener('keydown', onKeyDownHandler => {})
 }
 
 init()
