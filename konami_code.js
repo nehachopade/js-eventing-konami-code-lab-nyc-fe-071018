@@ -9,8 +9,9 @@ function init()
     body.addEventListener('keydown', (event) => 
     {
         if(tracker===code.length-1){
-          body.append('Great Job', paragraph)
+          
           event.preventDefault()
+          body.append('Great Job', paragraph)
           return
         }
         if (event.which===code[tracker])
