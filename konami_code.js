@@ -10,7 +10,7 @@ function init()
           { tracker++
             console.log ("Success")
             if(tracker===code.length-1)
-            { alert('You found it')
+            { alert('You found it')}
           }
         else
           { console.log ("You've messed up")
