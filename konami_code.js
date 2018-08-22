@@ -6,9 +6,12 @@ function init()
     const body= document.querySelector('body')
     body.addEventListener('keydown', (event) => 
     {
+        if(tracker===code.length-1){
+          event.preventDefault()
+          return
+        }
         if (event.which===code[tracker])
-          { 
-            console.log ("Success")
+          { console.log ("Success")
             if(tracker===code.length-1)
             { alert('You found it')}
             tracker++
