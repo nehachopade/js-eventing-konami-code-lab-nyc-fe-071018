@@ -7,10 +7,10 @@ function init()
     body.addEventListener('keydown', (event) => 
     {
         if (event.which===code[tracker])
-          {tracker++}
+          { tracker++}
         else
-          {console.log ("You've messed up")
-          tracker=0;}
+          { console.log ("You've messed up")
+            tracker=0;}
     })
 }
 init()
