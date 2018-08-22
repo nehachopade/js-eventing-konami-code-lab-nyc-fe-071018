@@ -7,10 +7,11 @@ function init()
     body.addEventListener('keydown', (event) => 
     {
         if (event.which===code[tracker])
-          { tracker++
+          { 
             console.log ("Success")
             if(tracker===code.length-1)
             { alert('You found it')}
+            tracker++
           }
         else
           { console.log ("You've messed up")
