@@ -13,8 +13,8 @@ function onKeyDownHandler(event)
         if (key===code[tracker])
           { console.log ("Success")
             if(tracker===code.length-1)
-            { alert('You found it')}
-            tracker++
+            { window.alert('You found it')}
+            tracker++;
           }
         else
           { console.log ("You've messed up")
