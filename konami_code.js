@@ -3,6 +3,7 @@ let tracker=0
 
 function onKeyDownHandler(event) 
 {
+  console.log(tracker)
     const key=parseInt(event.detail || event.which)
     const paragraph=document.createElement('p')
     if(tracker===code.length){
