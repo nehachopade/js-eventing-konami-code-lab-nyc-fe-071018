@@ -5,10 +5,11 @@ function init()
     let tracker=0;
     const body= document.querySelector('body')
     const paragraph=document.createElement('p')
-    body.append('Great Job', paragraph)
+    
     body.addEventListener('keydown', (event) => 
     {
         if(tracker===code.length-1){
+          body.append('Great Job', paragraph)
           event.preventDefault()
           return
         }
