@@ -5,16 +5,16 @@ function onKeyDownHandler(event)
 {
     const key=parseInt(event.detail || event.which)
     const paragraph=document.createElement('p')
-    if(tracker===code.length-1){
+    if(tracker===code.length){
           event.preventDefault()
           body.append('Great Job', paragraph)
           return
         }
         if (key===code[tracker])
           { console.log ("Success")
-            if(tracker===code.length-1)
+                      tracker++;
+            if(tracker===code.length)
             { window.alert('You found it')}
-            tracker++;
           }
         else
           { console.log ("You've messed up")
