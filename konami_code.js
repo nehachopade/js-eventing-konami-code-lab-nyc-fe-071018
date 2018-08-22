@@ -9,7 +9,8 @@ function init()
         if (event.which===code[tracker])
           { tracker++
             console.log ("Success")
-            
+            if(tracker===code.length-1)
+            { alert('You found it')
           }
         else
           { console.log ("You've messed up")
